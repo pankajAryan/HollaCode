@@ -1,0 +1,42 @@
+Holla App Services -
+
+1) Popup service 
+
+URL- POST http://128.199.99.127:8080/Holla/rest/service/getPopup
+Content-Type: application/json
+POST data form parameters:
+curr_lat=
+curr_Long=
+
+
+Sample Response -
+
+{
+    "object":{
+    "images":[
+                {
+                    "eventId":"1",
+                    "imageUrl":"http://url.com/img.jpg"
+                }
+            ],
+    "cities":[
+    {
+        "cityId":1,
+        "cityName":"Delhi",
+"priority":1
+},
+{
+"cityId":2,
+"cityName":"Gurgaon",
+"priority":2
+},
+{
+"cityId":3,
+"cityName":"Ghaziabad",
+"priority":3
+}
+]
+},
+"errorCode":"0",
+"errorMessage":"Sucess"
+}
