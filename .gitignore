@@ -1,4 +1,16 @@
 
 *.xcuserstate
 
+<<<<<<< HEAD
 Holla.xcodeproj/xcuserdata/development.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+=======
+*.xcuserstate
+>>>>>>> origin/master
+
+Holla.xcodeproj/project.xcworkspace/xcuserdata/user.xcuserdatad/UserInterfaceState.xcuserstate
+
+Holla.xcodeproj/project.xcworkspace/xcuserdata/development.xcuserdatad/UserInterfaceState.xcuserstate
+
+Holla.xcodeproj/project.xcworkspace/xcuserdata/user.xcuserdatad/UserInterfaceState.xcuserstate
+
+Holla.xcodeproj/project.xcworkspace/xcuserdata/development.xcuserdatad/UserInterfaceState.xcuserstate
