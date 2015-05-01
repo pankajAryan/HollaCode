@@ -336,7 +336,10 @@
     if ([[JSON objectForKey:@"errorCode"] intValue] == 0) {
         
         NSDictionary* responseDict = [JSON objectForKey:@"object"];
-        weekProgramArray = [[JSON objectForKey:@"object"] objectForKey:@"clubEvents"];
+        
+        if ([[JSON objectForKey:@"object"] objectForKey:@"clubEvents"] != [NSNull null]) {
+            weekProgramArray = [[JSON objectForKey:@"object"] objectForKey:@"clubEvents"];
+        }
         
         
         [self fetchClubImage:[responseDict objectForKey:@"clubImgUrl"] :clubImage];

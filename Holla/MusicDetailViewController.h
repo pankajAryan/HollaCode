@@ -14,6 +14,7 @@
    IBOutlet UICollectionView* musicGrid;
     NSMutableArray* backSelectedArray;
 
+    __weak IBOutlet UILabel *musicCategTitle;
 }
 @property (nonatomic,retain) NSDictionary* dict_selectedID;
 

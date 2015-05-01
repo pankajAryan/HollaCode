@@ -50,6 +50,9 @@
     
     if (DUMMYDATA) {
         if (dict_selectedID != nil) {
+            
+            musicCategTitle.text = [dict_selectedID objectForKey:@"catgName"];
+            
             NSDictionary* dict_HomeDetail = [[NSDictionary alloc] initWithObjectsAndKeys:
                                              [dict_selectedID objectForKey:@"catgId"],@"catgId",
                                              nil];
@@ -62,6 +65,8 @@
 
     NSLog(@"Selected Music Category [%@]",dict_selectedID);
     musicClubArray = [[NSMutableArray alloc]init];
+    
+    
 
 }
 
@@ -231,7 +236,7 @@
     {
         NSArray* clubList = [JSON objectForKey:@"object"];
         
-        if ([clubList count]>0 && clubList != nil) {
+        if (clubList != [NSNull null] && [clubList count]>0) {
             [musicClubArray addObjectsFromArray:clubList];
         }
         else

@@ -172,18 +172,18 @@
     frame.size.width -= 20;
     frame.size.height -= 20;
     
-    // Short 3-page Scrollview
-    threePageScrollView = [[DMCircularScrollView alloc] initWithFrame:frame];
-    threePageScrollView.pageWidth = frame.size.width;
-    threePageScroller_Views = [self generateSampleUIViews:3 width:frame.size.width];
-    pageControl.numberOfPages = threePageScroller_Views.count;
+//    // Short 3-page Scrollview
+//    threePageScrollView = [[DMCircularScrollView alloc] initWithFrame:frame];
+//    threePageScrollView.pageWidth = frame.size.width;
+//    threePageScroller_Views = [self generateSampleUIViews:3 width:frame.size.width];
+//    pageControl.numberOfPages = threePageScroller_Views.count;
     
-    [threePageScrollView setPageCount:[threePageScroller_Views count]
-                       withDataSource:^UIView *(NSUInteger pageIndex) {
-                           pageControl.currentPage = pageIndex;
-
-                           return [threePageScroller_Views objectAtIndex:pageIndex];
-                       }];
+//    [threePageScrollView setPageCount:[threePageScroller_Views count]
+//                       withDataSource:^UIView *(NSUInteger pageIndex) {
+//                           pageControl.currentPage = pageIndex;
+//
+//                           return [threePageScroller_Views objectAtIndex:pageIndex];
+//                       }];
     
     // How to handle page events change
     /*scrollView.handlePageChange =  ^(NSUInteger currentPageIndex,NSUInteger previousPageIndex) {
@@ -191,7 +191,7 @@
      };*/
     
 //   [threePageScrollView addSubview:pageControl];
-    [self.view addSubview:threePageScrollView];
+//    [self.view addSubview:threePageScrollView];
     [self.view bringSubviewToFront:pageControl];
 
     
