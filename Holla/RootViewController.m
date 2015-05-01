@@ -13,6 +13,9 @@
 #import "HConstants.h"
 #import "UtilityClass.h"
 
+#import "AboutUsViewController.h"
+#import "TermsAndConditionViewController.h"
+
 @interface RootViewController ()
 
 @property (nonatomic, weak) ContainerViewController *containerViewController;
@@ -201,6 +204,16 @@
         [sender setSelected:YES];
     }
 }
+- (IBAction)aboutUsAction:(id)sender {
+    
+    AboutUsViewController* clubD = (AboutUsViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"AboutUsViewControllerid"];
+    [self.navigationController pushViewController:clubD animated:YES];
+
+}
+- (IBAction)termsAndCondition:(id)sender {
+    TermsAndConditionViewController* clubD = (TermsAndConditionViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"tcid"];
+    [self.navigationController pushViewController:clubD animated:YES];
+}
 
 -(void)createStarClubView:(NSArray*)clubArray
 {
@@ -350,17 +363,20 @@
 }
 -(IBAction)selectState:(id)sender
 {
-    IQActionSheetPickerView *picker;
-        picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Select City" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil, nil];
-        [picker setTag:4];
-        picker.delegate=self;
-        [picker setTitlesForComponenets:[NSArray arrayWithObjects:
-                                         @"DELHI",@"GURGAON",@"NOIDA", nil]];
-   // [picker showInView:self.view];
-    
-    //[self.view bringSubviewToFront:picker];
+//    IQActionSheetPickerView *picker;
+//        picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Select City" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil, nil];
+//        [picker setTag:4];
+//        picker.delegate=self;
+//        [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+//                                         @"DELHI",@"GURGAON",@"NOIDA", nil]];
+//    
+//    [picker show];
+    IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Select City" delegate:self];
+    [picker setTag:4];
+    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+                                     @"DELHI",@"GURGAON",@"NOIDA", nil]];
+    [picker show];
 
-   
 }
 #pragma mark - PICKER VIEW DELEGATE
 - (void)actionSheetPickerView:(IQActionSheetPickerView *)pickerView didSelectTitles:(NSArray*)titles

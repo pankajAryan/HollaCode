@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330E3E581AF40B2C00FD1B2A /* IQActionSheetPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E3E551AF40B2C00FD1B2A /* IQActionSheetPickerView.m */; };
+		330E3E591AF40B2C00FD1B2A /* IQActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E3E571AF40B2C00FD1B2A /* IQActionSheetViewController.m */; };
+		333E79331AF4000D005BE26A /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333E79321AF4000D005BE26A /* AboutUsViewController.m */; };
+		333E79361AF40326005BE26A /* TermsAndConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333E79351AF40326005BE26A /* TermsAndConditionViewController.m */; };
 		33D407271AE3937800F679A3 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D407261AE3937800F679A3 /* GoogleMaps.framework */; };
 		33D407291AE393B400F679A3 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33D407281AE393B400F679A3 /* GoogleMaps.bundle */; };
 		CE136B441AE9949E008199AE /* DMCircularScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE136B431AE9949E008199AE /* DMCircularScrollView.m */; };
-		CE47A9E61ACA719900541A64 /* IQActionSheetPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47A9E51ACA719900541A64 /* IQActionSheetPickerView.m */; };
 		CE47A9E91ACA72E800541A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE47A9E81ACA72E800541A64 /* Foundation.framework */; };
 		CE47A9EB1ACA730100541A64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE47A9EA1ACA730100541A64 /* UIKit.framework */; };
 		CE47A9EE1ACAA80500541A64 /* MusicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47A9ED1ACAA80500541A64 /* MusicCollectionViewCell.m */; };
@@ -95,12 +98,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		330E3E541AF40B2C00FD1B2A /* IQActionSheetPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQActionSheetPickerView.h; sourceTree = "<group>"; };
+		330E3E551AF40B2C00FD1B2A /* IQActionSheetPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQActionSheetPickerView.m; sourceTree = "<group>"; };
+		330E3E561AF40B2C00FD1B2A /* IQActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQActionSheetViewController.h; sourceTree = "<group>"; };
+		330E3E571AF40B2C00FD1B2A /* IQActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQActionSheetViewController.m; sourceTree = "<group>"; };
+		333E79311AF4000D005BE26A /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		333E79321AF4000D005BE26A /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		333E79341AF40326005BE26A /* TermsAndConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsAndConditionViewController.h; sourceTree = "<group>"; };
+		333E79351AF40326005BE26A /* TermsAndConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsAndConditionViewController.m; sourceTree = "<group>"; };
 		33D407261AE3937800F679A3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		33D407281AE393B400F679A3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		CE136B421AE9949E008199AE /* DMCircularScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCircularScrollView.h; sourceTree = "<group>"; };
 		CE136B431AE9949E008199AE /* DMCircularScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCircularScrollView.m; sourceTree = "<group>"; };
-		CE47A9E41ACA719900541A64 /* IQActionSheetPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQActionSheetPickerView.h; sourceTree = "<group>"; };
-		CE47A9E51ACA719900541A64 /* IQActionSheetPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQActionSheetPickerView.m; sourceTree = "<group>"; };
 		CE47A9E81ACA72E800541A64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE47A9EA1ACA730100541A64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE47A9EC1ACAA80500541A64 /* MusicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCollectionViewCell.h; sourceTree = "<group>"; };
@@ -266,8 +275,10 @@
 		CE47A9E71ACA719E00541A64 /* picker */ = {
 			isa = PBXGroup;
 			children = (
-				CE47A9E41ACA719900541A64 /* IQActionSheetPickerView.h */,
-				CE47A9E51ACA719900541A64 /* IQActionSheetPickerView.m */,
+				330E3E541AF40B2C00FD1B2A /* IQActionSheetPickerView.h */,
+				330E3E551AF40B2C00FD1B2A /* IQActionSheetPickerView.m */,
+				330E3E561AF40B2C00FD1B2A /* IQActionSheetViewController.h */,
+				330E3E571AF40B2C00FD1B2A /* IQActionSheetViewController.m */,
 			);
 			name = picker;
 			sourceTree = "<group>";
@@ -329,6 +340,10 @@
 				CE8355D51ABA06230017BCEF /* MapControllerViewController.m */,
 				CE66231A1AC3E2E600CFC80B /* DJDetailViewController.h */,
 				CE66231B1AC3E2E600CFC80B /* DJDetailViewController.m */,
+				333E79311AF4000D005BE26A /* AboutUsViewController.h */,
+				333E79321AF4000D005BE26A /* AboutUsViewController.m */,
+				333E79341AF40326005BE26A /* TermsAndConditionViewController.h */,
+				333E79351AF40326005BE26A /* TermsAndConditionViewController.m */,
 			);
 			name = "Segment Controllers";
 			sourceTree = "<group>";
@@ -641,6 +656,7 @@
 			files = (
 				CE65F7BB1AC1ADA60077D62A /* UtilityClass.m in Sources */,
 				CE8355E01ABB4BCF0017BCEF /* MusicViewController.m in Sources */,
+				330E3E581AF40B2C00FD1B2A /* IQActionSheetPickerView.m in Sources */,
 				CE8355C91AB97B2E0017BCEF /* CMFGalleryCell.m in Sources */,
 				CE65F7AC1AC1AC4B0077D62A /* AFPropertyListRequestOperation.m in Sources */,
 				CE65F7B81AC1ACAC0077D62A /* AMNetworkClient.m in Sources */,
@@ -648,6 +664,7 @@
 				CE5E46571AC32BF9002EC447 /* ClubDetailViewController.m in Sources */,
 				CEF3B1411AB7349E00C2F13E /* ClubViewController.m in Sources */,
 				CE65F7AD1AC1AC4B0077D62A /* AFURLConnectionOperation.m in Sources */,
+				330E3E591AF40B2C00FD1B2A /* IQActionSheetViewController.m in Sources */,
 				CEF3B13B1AB72BE100C2F13E /* HomeController.m in Sources */,
 				CE65F7A71AC1AC4A0077D62A /* AFHTTPClient.m in Sources */,
 				CE47A9EE1ACAA80500541A64 /* MusicCollectionViewCell.m in Sources */,
@@ -671,13 +688,14 @@
 				CE5E46511AC27F9E002EC447 /* MBProgressHUD.m in Sources */,
 				CE8355CD1AB985810017BCEF /* DJGalleryCell.m in Sources */,
 				CE89A48B1AC45AED000A5B9F /* OfferDetailViewController.m in Sources */,
-				CE47A9E61ACA719900541A64 /* IQActionSheetPickerView.m in Sources */,
 				CEF3B1121AB6DF5700C2F13E /* main.m in Sources */,
 				CE65F7AE1AC1AC4B0077D62A /* AFXMLRequestOperation.m in Sources */,
+				333E79331AF4000D005BE26A /* AboutUsViewController.m in Sources */,
 				CEF3B13E1AB72C9500C2F13E /* RootViewController.m in Sources */,
 				CE65F7AA1AC1AC4A0077D62A /* AFJSONRequestOperation.m in Sources */,
 				CE65F7AF1AC1AC4B0077D62A /* UIImageView+AFNetworking.m in Sources */,
 				CE8D9AEA1AB75ACD002D39D3 /* HcustomSegaue.m in Sources */,
+				333E79361AF40326005BE26A /* TermsAndConditionViewController.m in Sources */,
 				CE6623161AC3D72F00CFC80B /* UIViewController+ALPopupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
