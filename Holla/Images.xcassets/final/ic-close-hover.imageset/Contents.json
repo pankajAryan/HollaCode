@@ -2,18 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "ic-close-28.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "ic-close-56.png"
+      "filename" : "ic-close-hover@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "ic-close-84.png"
+      "filename" : "ic-close-hover@3x.png"
     }
   ],
   "info" : {

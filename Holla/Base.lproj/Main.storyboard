@@ -162,6 +162,9 @@
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="aboutUsAction:" destination="5ED-3j-ybK" eventType="touchUpInside" id="89v-4v-XdY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Jy-h3-3ni">
                                                         <rect key="frame" x="0.0" y="399" width="237" height="30"/>
@@ -174,6 +177,9 @@
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="termsAndCondition:" destination="5ED-3j-ybK" eventType="touchUpInside" id="gpH-du-PRz"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2o0-FJ-gEP">
                                                         <rect key="frame" x="0.0" y="124" width="237" height="30"/>
@@ -3061,6 +3067,106 @@
             </objects>
             <point key="canvasLocation" x="784" y="1158"/>
         </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="E5D-rM-pbM">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsViewControllerid" id="xX6-gA-ZDv" customClass="AboutUsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jfM-lX-IRE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutUsbg" id="ouC-xv-OQM">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ukF-Qm-uqb">
+                                <rect key="frame" x="3" y="25" width="22" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="xX6-gA-ZDv" eventType="touchUpInside" id="jO8-ju-znl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackHollaLogo" id="7QF-Oc-hCt">
+                                <rect key="frame" x="109" y="72" width="102" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" id="wwu-ZR-P5D">
+                                <rect key="frame" x="32" y="137" width="257" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bV5-AJ-RzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="1656"/>
+        </scene>
+        <!--Terms And Condition View Controller-->
+        <scene sceneID="uhb-gg-Thw">
+            <objects>
+                <viewController storyboardIdentifier="tcid" id="hUM-O0-Z7I" customClass="TermsAndConditionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZt-2k-gVM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutUsbg" id="SVf-rv-fDE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PYT-g3-AA8">
+                                <rect key="frame" x="0.0" y="21" width="22" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="hUM-O0-Z7I" eventType="touchUpInside" id="rGz-iG-L9X"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackHollaLogo" id="HXd-YO-YNn">
+                                <rect key="frame" x="109" y="394" width="102" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015. all rights reserved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HYD-NC-33L">
+                                <rect key="frame" x="98" y="435" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="llE-4p-BAv">
+                                <rect key="frame" x="67" y="85" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" id="MAu-Jn-P3S">
+                                <rect key="frame" x="32" y="119" width="257" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfH-5B-ZJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="1648"/>
+        </scene>
         <!--Music More Info View Controller-->
         <scene sceneID="t7R-Ti-qP0">
             <objects>
@@ -3114,8 +3220,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AboutUsbg" width="320" height="480"/>
         <image name="BackgroundImage" width="320" height="480"/>
-        <image name="CrossImage" width="28" height="28"/>
+        <image name="CrossImage" width="22" height="22"/>
         <image name="FILTER-CHECKED" width="52" height="52"/>
         <image name="FILTER-UNCHECKED" width="52" height="52"/>
         <image name="HollaLogo" width="82" height="27"/>
@@ -3129,17 +3236,18 @@
         <image name="arrow" width="80" height="4"/>
         <image name="backButton" width="45" height="45"/>
         <image name="backgroundImage2" width="320" height="480"/>
-        <image name="bookmark" width="43" height="54"/>
-        <image name="bookmark-grey" width="55" height="55"/>
+        <image name="blackHollaLogo" width="125" height="39"/>
+        <image name="bookmark" width="16" height="16"/>
+        <image name="bookmark-grey" width="16" height="16"/>
         <image name="comingsoon" width="516" height="140"/>
         <image name="default-club" width="260" height="162"/>
         <image name="default-dj" width="362" height="362"/>
         <image name="default-event" width="198" height="198"/>
         <image name="facebook" width="67" height="67"/>
-        <image name="hand" width="38" height="38"/>
-        <image name="hand-gray" width="44" height="44"/>
-        <image name="ic-close" width="44" height="44"/>
-        <image name="ic-close-hover" width="44" height="44"/>
+        <image name="hand" width="11" height="11"/>
+        <image name="hand-gray" width="11" height="11"/>
+        <image name="ic-close" width="22" height="22"/>
+        <image name="ic-close-hover" width="22" height="22"/>
         <image name="menuDeafult" width="25" height="25"/>
         <image name="menuImage" width="794" height="1254"/>
         <image name="menuSelected" width="25" height="25"/>

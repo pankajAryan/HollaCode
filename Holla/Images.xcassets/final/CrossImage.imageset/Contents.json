@@ -2,18 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "ic-victory-active.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "ic-victory-active-1.png"
+      "filename" : "ic-close-hover@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "ic-victory-active-1-1.png"
+      "filename" : "ic-close-hover@3x.png"
     }
   ],
   "info" : {
