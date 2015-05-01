@@ -371,11 +371,11 @@
 //                                         @"DELHI",@"GURGAON",@"NOIDA", nil]];
 //    
 //    [picker show];
-    IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Select City" delegate:self];
-    [picker setTag:4];
-    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
-                                     @"DELHI",@"GURGAON",@"NOIDA", nil]];
-    [picker show];
+//    IQActionSheetPickerView *picker = [[IQActionSheetPickerView alloc] initWithTitle:@"Select City" delegate:self];
+//    [picker setTag:4];
+//    [picker setTitlesForComponenets:[NSArray arrayWithObjects:
+//                                     @"DELHI",@"GURGAON",@"NOIDA", nil]];
+//    [picker show];
 
 }
 #pragma mark - PICKER VIEW DELEGATE
