@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>13EDBB19-A201-4710-A265-31C5F1E6BF97</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Holla</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>330E0EB7C8E8700F8A478FEC650EC7A45431201B</key>
+		<string>https://github.com/pankajAryan/HollaCode.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Holla.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>330E0EB7C8E8700F8A478FEC650EC7A45431201B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pankajAryan/HollaCode.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>330E0EB7C8E8700F8A478FEC650EC7A45431201B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>330E0EB7C8E8700F8A478FEC650EC7A45431201B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HollaCode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
