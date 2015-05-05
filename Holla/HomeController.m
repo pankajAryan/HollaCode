@@ -100,8 +100,8 @@
     [AMNetworkClient instance].delegate = self;
     
     if (DUMMYDATA) {
-        NSDictionary* dict_HomeDetail = [[NSDictionary alloc] initWithObjectsAndKeys:@"70.2",@"curr_lat",
-                                         @"70.2",@"curr_Long",
+        NSDictionary* dict_HomeDetail = [[NSDictionary alloc] initWithObjectsAndKeys:@"28.511",@"curr_lat",
+                                         @"77.063",@"curr_Long",
                                          @"2",@"cityId",
                                          [UtilityClass getDeviceUDID],@"deviceId",
 
@@ -278,7 +278,7 @@
         if (![image_eventUrl isEqual:[NSNull null]])
             [self fetchClubImage:image_eventUrl :cell.clubImagevIew];
         else
-            cell.clubImagevIew.image = [UIImage imageNamed:@"default-dj"];
+            cell.clubImagevIew.image = [UIImage imageNamed:@"default-club"];
         
         
         
@@ -335,7 +335,7 @@
     
     DLog(@"Image URL [%@]",ImageURL);
     
-    [imageViewForClub setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@"default-club"] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
+    [imageViewForClub setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@"default-dj"] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
     {
         imageViewForClub.image = image;
         

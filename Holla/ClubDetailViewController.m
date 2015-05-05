@@ -53,7 +53,7 @@
     
     [AMNetworkClient instance].delegate = self;
     
-    if (DUMMYDATA) {
+//    if (DUMMYDATA) {
         NSDictionary* dict_HomeDetail = [[NSDictionary alloc] initWithObjectsAndKeys:
                                          [dict_selectedClub objectForKey:@"clubId"],@"clubId",
                                          [UtilityClass getDeviceUDID],@"deviceId",
@@ -62,7 +62,7 @@
         
         [UtilityClass showSpinnerWithMessage:@"Fetching Data.." :self];
         [[AMNetworkClient instance] fetchClubDetail:dict_HomeDetail];
-    }
+//    }
 
     
     NSLog(@"Selected Club [%@]",dict_selectedClub);

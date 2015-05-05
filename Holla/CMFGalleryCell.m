@@ -69,10 +69,14 @@
      */
 
     [lbl_eventName_clubname setText:[NSString stringWithFormat:@"%@ @ %@",[eventDict objectForKey:@"eventName"],[eventDict objectForKey:@"clubName"]]];
+    lbl_eventName_clubname.text = [lbl_eventName_clubname.text uppercaseString];
     [lbl_Date setText:[eventDict objectForKey:@"eventStartDate"]];
+    lbl_Date.text = [lbl_Date.text uppercaseString];
     [lbl_time setText:[eventDict objectForKey:@"eventStartTime"]];
+    lbl_time.text = [lbl_time.text uppercaseString];
+
     [lbl_address setText:[NSString stringWithFormat:@"at %@",[eventDict objectForKey:@"clubLocation"]]];
-    
+    lbl_address.text = [lbl_address.text uppercaseString];
 }
 
 @end

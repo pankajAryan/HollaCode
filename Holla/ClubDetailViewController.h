@@ -65,4 +65,5 @@
 }
 
 @property (nonatomic,retain) NSDictionary* dict_selectedClub;
+
 @end

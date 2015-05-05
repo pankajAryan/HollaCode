@@ -33,3 +33,7 @@ Holla.xcodeproj/project.xcworkspace/xcuserdata/development.xcuserdatad/UserInter
 *.xccheckout
 
 .DS_Store
+
+*.xcuserstate
+
+*.xcbkptlist

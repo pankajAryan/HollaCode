@@ -63,12 +63,12 @@
     [AMNetworkClient instance].delegate = self;
     
     if (DUMMYDATA) {
-        NSDictionary* dict_HomeDetail = [[NSDictionary alloc] initWithObjectsAndKeys:@"70.2",@"curr_lat",
-                                        @"70.2",@"curr_Long",
+        NSDictionary* dict_HomeDetail = [[NSDictionary alloc] initWithObjectsAndKeys:@"28.511",@"curr_lat",
+                                         @"77.063",@"curr_Long",
                                          @"2",@"cityId",
                                          [UtilityClass getDeviceUDID],@"deviceId",
-
-                                        nil];
+                                         
+                                         nil];
 
         [UtilityClass showSpinnerWithMessage:@"Fetching Data.." :self];
         [[AMNetworkClient instance] fetchClubList:dict_HomeDetail];
@@ -157,13 +157,12 @@
     [clubName setText:[SectionClub objectForKey:@"clubName"]];
     [clubLocation setText:[SectionClub objectForKey:@"clubLocation"]];
     [timings setText:[NSString stringWithFormat:@"Hours: %@-%@",[SectionClub objectForKey:@"clubStartTime"],[SectionClub objectForKey:@"clubClosingTime"]]];
-    [approxCost setText:[SectionClub objectForKey:@"approxCost"]];
+    [approxCost setText:[NSString stringWithFormat:@"₹ %@",[SectionClub objectForKey:@"approxCost"]]];
     [approxCostText setText:[SectionClub objectForKey:@"approxCostText"]];
     
-    NSString* favCount = @"NA";//[NSString stringWithFormat:@"%ld",[SectionClub objectForKey:@"fabCount"]];
+    NSString* favCount = @"0";//[NSString stringWithFormat:@"%ld",[SectionClub objectForKey:@"fabCount"]];
     [fabCount setTitle:favCount forState:UIControlStateNormal];
 
-    
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
