@@ -214,25 +214,35 @@
     [textField resignFirstResponder];
     return YES;
 }
+
 -(void)fetchClubImage :(NSString*)ImageURL :(UIImageView*)imageViewForClub
 {
-    [UtilityClass showSpinnerWithMessage:@"fetching data..." :self];
-    NSURL *url = [NSURL URLWithString:ImageURL];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    DLog(@"Image URL [%@]",ImageURL);
-    
-    [imageViewForClub setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@""] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-        imageViewForClub.image = image;
+    if (ImageURL != [NSNull null]) {
         
-        [UtilityClass hideSpinner];
+        [UtilityClass showSpinnerWithMessage:@"fetching data..." :self];
+
+        NSURL *url = [NSURL URLWithString:ImageURL];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
         
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        DLog(@"Image URL [%@]",ImageURL);
         
-        UIImage* defaultImage = [UIImage imageNamed:@"default-club"];
-        [UtilityClass hideSpinner];
-        
-    }];
+        [imageViewForClub setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@""] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+            imageViewForClub.image = image;
+            
+            [UtilityClass hideSpinner];
+            
+        } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+            
+            imageViewForClub.image = [UIImage imageNamed:@"default-club"];
+            [UtilityClass hideSpinner];
+            
+        }];
+
+    }
+    else {
+        imageViewForClub.image = [UIImage imageNamed:@"default-club"];
+    }
 }
 
 #pragma mark - BUTTON IMAGES

@@ -268,7 +268,15 @@
  //event startdate is not in correct format in UI its only 15 mar
  //likecount and fabcount should be in string
 */
-        NSString *imageName = [self.dataArray objectAtIndex:indexPath.row];
+        NSString *imageName;
+        
+        if ((indexPath.row/2)) {
+            imageName = [self.dataArray objectAtIndex:1];
+        }
+        else {
+            imageName = [self.dataArray objectAtIndex:0];
+        }
+        
         [cell setImageName:imageName];
         [cell updateCell :eventDictionary];
         
@@ -445,6 +453,7 @@
     self.dataArray = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:sourcePath error:NULL];
     
 }
+
 #pragma mark - Button Actions
 -(IBAction)gotoMapButtonAction:(id)sender
 {
